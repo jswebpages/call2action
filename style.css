@@ -1,0 +1,370 @@
+.fullscreen {
+    height: 100vh !important;
+  }
+  /* Custom, iPhone Retina */
+  /* Small Devices, Tablets */
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width: 992px) {
+    .fullscreen {
+      height: auto !important;
+    }
+  }
+
+  section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    overflow: hidden;
+  }
+
+
+  .bg-theme {
+    background-color: #ffa40c !important;
+  }
+
+
+
+  .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .client img {
+    max-width: 100%;
+    width: auto !important;
+  }
+  .clients-carousel [class*="col-"] {
+    max-height: 80px;
+  }
+  /* Custom, iPhone Retina */
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .client img {
+      margin-bottom: 20px;
+    }
+  }
+
+  
+
+.cta h3 {
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 58px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+.cta p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 48px;
+}
+.cta .btn {
+  height: 70px;
+  width: 300px;
+  font-size: 24px;
+  line-height: 70px;
+}
+
+.heading .heading--title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+  }
+
+  .heading .heading--desc {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 0;
+    padding: 0 30px;
+  }
+
+  .bg-white {
+    background-color: #ffffff !important;
+  }
+
+  section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    overflow: hidden;
+  }
+
+  .btn--primary {
+    background-color: #ffa40c;
+    color: #ffffff;
+    border-color: #ffa40c;
+}
+
+.testimonial-panel {
+    padding: 50px 80px;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    transition: all .3s linear;
+    position: relative;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .testimonial-panel:hover {
+    background-color: #f8f8f8;
+  }
+  .testimonial-panel .testimonial--img {
+    margin: 0 auto 25px auto;
+  }
+  .testimonial-panel .testimonial--body p {
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+  .testimonial-panel .testimonial--author h5 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  .testimonial-panel .testimonial--job {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    margin-top: 12px;
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .testimonial-panel {
+      padding: 30px;
+    }
+    .testimonial-panel .testimonial--img {
+      position: relative;
+      top: 0;
+      left: 0;
+      margin: 0 auto 20px auto;
+      text-align: center;
+    }
+    .testimonial-panel .testimonial--body {
+      padding-left: 0;
+      text-align: center;
+    }
+    .testimonial-panel .testimonial--author h5 {
+      text-align: center;
+    }
+  }
+  /* Small Devices, Tablets */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .testimonial-panel {
+      padding: 40px;
+    }
+  }
+
+
+
+  /* footer */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+}
+
+.footer-distributed{
+	background: #666;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer_content{
+    width: 100%;
+    height: inherit;
+    position: relative;
+    background: #fff;
+    /* top: 600px; */
+    padding-top: 30px;
+}
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
