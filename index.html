@@ -27,7 +27,7 @@
   		
 		}
 
-		.logo{ float:left; color: gray; padding:10px; font-size: 50px;}
+		.logo{ float:left; color: #beadaa; padding:10px; font-size: 50px;}
 		nav{ float:right; color: white;}
 		li{
 		display: inline-block; 
@@ -35,7 +35,119 @@
 		}
 		li a{color: white; font-size: 30px;}
 		li a:hover{color: red;}
-	</style>
+        .logo span{color: #464655;}
+		.site-nav{    
+    		right:0;
+    		position: absolute;
+    		background: #464655;
+    		clip-path: circle(0px at top right);
+    		transition: clip-path ease-in-out 700ms;
+		}
+
+.site-nav-open{
+    clip-path: circle(150% at top right);
+}
+.site-nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.site-nav li{
+    border-bottom: 1px solid #575766;
+}
+.site-nav li:last-child{
+    border-bottom: none;
+}
+.site-nav a{
+    color: #beadaa;
+    display: block;
+    padding: 2em 6em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.site-nav a:hover,
+.site-nav a:focus{
+    background: #e4b363;
+    color: #464655;
+}
+
+.site-nav--icon{
+    display: inline-block;
+    font-size: 1.5em;
+    margin-right: 1em;
+    width: 1.1em;
+    text-align: right;
+    color: rgba(255, 255, 255, .4);
+}
+
+.menu-toggle{
+   
+    padding: 1em;
+    position: absolute;
+    top: .5em;
+    right: .5em;
+    
+}
+.menu-open .hamburger{
+    transform: rotate(45deg);
+}
+.menu-open .hamburger::before{
+    opacity: 0;
+}
+.menu-open .hamburger::after{
+    transform: translateY(-3px) rotate(-90deg);
+}
+.hamburger,
+.hamburger::before,
+.hamburger::after{
+    content: '';
+    display: block;
+    background: #ebebd3;
+    height: 3px;
+    width: 1.75em;
+    border-radius: 3px;
+    transition: all ease-in-out 500ms;
+}
+.hamburger::before{
+    transform: translateY(-6px);
+}
+.hamburger::after{
+    transform: translateY(3px);
+}
+
+@media (min-width:700px){
+  .menu-toggle{
+      display: none;
+  } 
+  .site-nav{
+      height: auto;
+      position: relative;
+      background: transparent;
+      float: right;
+      margin-right: 10px;
+      clip-path: initial;
+  } 
+  .site-nav li{
+      display: inline-block;
+      border: none;
+  }
+
+  .site-nav a{
+      padding: 0;
+      margin-left: 3em;
+  }
+  .site-nav--icon{
+      display: none;
+  }
+  .site-nav a:hover,
+  .site-nav a:focus{
+      background: transparent;
+  }
+
+}
+
+
+</style>
 
 </head>
 
@@ -43,18 +155,25 @@
 <div id="wrapper">
 
 	<header>
-		<div class="logo">logo</div>
+		<div class="logo"><span>JS</span>webpages</div>
 
-		<nav>
+		<nav id="site-nav" class="site-nav">
 			<ul>
-				<li><a data-scroll="scrollTo" href="#slider">home</a></li>
-				<li><a data-scroll="scrollTo" href="#feature2">about</a></li>
-				<li><a data-scroll="scrollTo" href="#reviews">courses</a></li>
-				<li><a data-scroll="scrollTo" href="#clients">contact</a></li>
-				<li><a data-scroll="scrollTo" href="#cta">LOGIN</a></li>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+				<li><a href="#">Courses</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Login</a></li>
 			</ul>
 		</nav>
+        <div id="menu-toggle" class="menu-toggle" onClick="cambiarClase()">
+            <div class="hamburger"></div>
+        </div>
 	</header>
+
+
+
 
 
 
@@ -388,5 +507,7 @@ Financial Inc.
 
 
 </div>
+
+<script src="app.js"></script>
 </body>
 </html>
